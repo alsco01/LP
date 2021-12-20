@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+<!--<meta name="viewport" content="user-scalable=no,width=dev">-->
+<!--<meta name="viewport" content="width=device-width, minimum-scale=1.0">-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP</title>
+  </head>
+
+
+  <body style="overflow-x: hidden">
+<div class="A1">
+   <div class="bg">
+   </div>
+    <div class="Menu">
+      <ul class="Menu-list" data-offset="10">
+        <a href="#1"><li class="Menu-list-item" data-offset="20" onclick>
+               Home
+          <span class="Mask"><span>Home</span></span>
+          <span class="Mask"><span>Home</span></span>
+        </li></a>
+        <a href="#2"><li class="Menu-list-item" data-offset="18" onclick>
+          About
+          <span class="Mask"><span>About</span></span>
+          <span class="Mask"><span>About</span></span>
+        </li></a>
+        <a href="#3"><li class="Menu-list-item" data-offset="16" onclick>
+          History
+          <span class="Mask"><span>History</span></span>
+          <span class="Mask"><span>History</span></span>
+        </li></a>
+        <a href="#4"><li class="Menu-list-item" data-offset="14" onclick>
+          Composure
+          <span class="Mask"><span>Composure</span></span>
+          <span class="Mask"><span>Composure</span></span>
+        </li></a>
+        <a href="#5"><li class="Menu-list-item" data-offset="12" onclick>
+          Administrate
+          <span class="Mask"><span>Administrate</span></span>
+          <span class="Mask"><span>Administrate</span></span>
+        </li></a>
+      </ul>
+    </div>
+
+    <div class="audio-container">
+      <div class="audiosvg-container">
+        <div class="active-box" onclick="pauseAudio()"></div>
+        <svg class="audiosvg" onclick="playAudio()" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+          <style type="text/css">
+    								.st0{fill:none;stroke:black;stroke-width:5.6943;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    										.st1{fill:black;}
+    										.st2{fill:none;stroke:#707070;stroke-width:5.8983;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    										.st3{fill:#707070;}
+    										.st4{fill:#C7C7C7;}
+    										.st5{fill:none;stroke:#707070;stroke-width:7.5924;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    										.st6{fill:#FFFFFF;}
+    										.st7{fill:none;stroke:#C7C7C7;stroke-width:13.2866;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    										.st8{fill:none;stroke:#C7C7C7;stroke-width:4.4082;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    										.st9{fill:none;stroke:#fff;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    									</style>
+          <g>
+            <g>
+              <g id="svg-audio">
+    													<circle class="st5" cx="125.5" cy="154" r="66.3"/>
+    													<path class="st3" d="M64.3,179.5c5.1,12.2,13.7,22.6,24.6,29.8l36.6-55.2L64.3,179.5z"/>
+    													<polygon class="st3" points="181.4,118.5 170.8,106.4 125.5,154 			"/>
+    													<g>
+    														<g id="hover-circle">
+    															<circle class="st4" cx="125.5" cy="154" r="24.7"/>
+    														</g>
+
+    														<g id="ripple-circle">
+    															<circle class="st9" cx="125.5" cy="154" r="9.6"/>
+    															<circle class="st9" cx="125.5" cy="154" r="9.6"/>
+    															<circle class="st9" cx="125.5" cy="154" r="9.6"/>
+    														</g>
+    														<circle class="st3" cx="125.5" cy="154" r="9.6"/>
+    													</g>
+    												</g>
+    									   <!--		<path class="st2" d="M202.8,128.2H214c3.8,0,6.8-2.4,6.8-5.4V18.7c0-3-3.1-5.4-6.8-5.4H36c-3.8,0-6.8,2.4-6.8,5.4v104.1
+    													c0,3,3.1,5.4,6.8,5.4h13.1"/> -->
+    												<path class="st7" d="M160,196.7l12.2,16.5c2.5,3.3,6.4,6.3,11.6,7.4"/>
+    												<circle class="st8" cx="203.1" cy="224.6" r="19.9"/>
+    												<g>
+    													<g>
+    														<circle class="st1" cx="189" cy="82.3" r="4.4"/>
+    														<circle class="st4" cx="189" cy="98.1" r="4.4"/>
+    													</g>
+    												</g>
+    												<path class="st4" d="M169.5,197.3c1.9,2.5,1.5,6-1,8l-2.2,1.7c-2.5,1.9-6,1.5-8-1l-7.3-9.4c-1.9-2.5-1.5-6,1-8l2.2-1.7
+    													c2.5-1.9,6-1.5,8,1L169.5,197.3z"/>
+    												<path class="st8" d="M160,196.7l12.2,16.5c2.5,3.3,6.4,6.3,11.6,7.4c6.1,1.2,19.2,3.8,19.2,3.8"/>
+    											</g>
+    											<g id="svg-line">
+    												<line class="st0" x1="162.7" y1="236.7" x2="87.3" y2="236.7"/>
+    											</g>
+    										</g>
+    										</svg>
+      </div>
+    </div>
+    </div>
+    <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+
+
+  </div>
+
+<div class="A2"><a name="2"></a>
+  <label>
+    <input type='checkbox'>
+    <span class='menu'>
+      <span class='hamburger'></span>
+    </span>
+    <ul>
+      <a href='#1'><li>
+        Home
+      </li></a>
+      <a href='#2'><li>
+        About
+      </li></a>
+      <a href='#3'><li>
+        History
+      </li></a>
+      <a href='#4'><li>
+        Composure
+      </li></a>
+      <a href='#5'><li>
+        Administrate
+      </li></a>
+    </ul>
+  </label>
+
+
+ <div class="A2a">
+  <!-- <iframe src="https://giphy.com/embed/3ohs7SYe1SH9oeqDaE" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+   <p><a href="https://giphy.com/gifs/film-black-and-white-vintage-3ohs7SYe1SH9oeqDaE"></a></p>-->
+
+ </div>
+ <div class="A2b">
+   About
+ </div>
+ <div class="A2c">
+   Long Play Record
+ </div>
+ <div class="A2d">
+   <h1>검은색의 둥근 합성수지 판 위에 음의 높낮이를 새긴 미세한 줄을 침이 따라갈 때
+   일어나는 떨림을 다시 음으로 바꿔서 들을 수 있도록 만든 일종의 아날로그 저장 수단</h1>
+ </div>
+</div>
+
+
+
+
+
+<div class="A3"><a name="3"></a>
+
+
+  <div class="A3a">
+  History
+      </div>
+    <div class="A3b">
+  <main class="page-content">
+    <div class="card">
+      <div class="content">
+        <h2 class="title">1857</h2>
+        <p class="copy">
+          세계 최초의 음성기록 시스템은 프랑스의 Leon Scott이 진동판의 음성기록을 종이에 기록하는 'Phnogragh'입니다.<br />
+          1876년 Graham Bell이 전화기를 발명함으로써 여러 연구가들이 재생 가능한 레코드 발명에 착수하게 됩니다.
+        </p>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">1877</h2>
+        <p class="copy">
+          세계 최초로 실제 재생가능한 레코드는 에디슨이 발명한 'Phonogragh'입니다. <br />
+          처음 축음기는 음악용도가 아닌 장님을 위한 보조장치로 고안되었습니다.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">1887</h2>
+        <p class="copy">
+          Emile Berliner가 축음기를 발명합니다. <br />
+          초기에는 78회전 음반78 rpm record인 SP(Standard play record)였습니다.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">1950</h2>
+        <p class="copy">
+          33⅓ 회전 마이크로그루브 바이닐 음반이라고 하는 LP가 발명됐습니다.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+
+<!--  <div class="A3a">
+History
+    </div>
+
+  <div class="A3ab">
+
+    <div class="A3b">
+      <div class="A3bb" style="background-image: url('data/A3bb.png');">
+      </div>
+      <h1 class="yy">1857</h1>
+      <h5 class="ss">
+       세계 최초의 음성기록 시스템은 프랑스의 Leon Scott이 진동판의 음성기록을 종이에 기록하는 'Phnogragh'입니다.<br />
+       1876년 Graham Bell이 전화기를 발명함으로써 여러 연구가들이 재생 가능한 레코드 발명에 착수하게 됩니다.
+      </h5>
+    </div>
+
+    <div class="A3c">
+      <div class="A3cc"style="background-image: url('data/A3cc.png');">
+      </div>
+      <h1 class="yy">1877</h1>
+      <h5 class="ss">
+세계 최초로 실제 재생가능한 레코드는 에디슨이 발명한 'Phonogragh'입니다. <br />
+처음 축음기는 음악용도가 아닌 장님을 위한 보조장치로 고안되었습니다.
+</h5>
+</div>
+
+    <div class="A3d">
+      <div class="A3dd"style="background-image: url('data/A3dd.png');">
+      </div>
+      <h1 class="yy">1887</h1>
+      <h5 class="ss">
+Emile Berliner가 축음기를 발명합니다. <br />
+초기에는 78회전 음반78 rpm record인 SP(Standard play record)였습니다.
+      </h5>
+    </div>
+
+    <div class="A3e">
+      <div class="A3ee"style="background-image: url('data/A3ee.png');">
+      </div>
+      <h1 class="yy">1950</h1>
+      <h5 class="ss">
+        33⅓ 회전 마이크로그루브 바이닐 음반이라고 하는 LP가 발명됐습니다.
+</h5>
+    </div>
+</div>-->
+</div>
+
+
+
+
+<div class="A4"><a name="4"></a>
+<div class="A4a">
+  Composure
+</div>
+<div class="A4b">
+  Turntable
+</div>
+<div class="A4c">
+<!--음반을 놓고 일정한 속도로 턴테이블이 회전할 때 픽업이 음반에 닿으면서 기록을 재생합니다.<br>-->
+<h1>레코드 플레이어라고도 하며 LP Disk를 플레이하는 기기입니다.<br>
+LP판에는 가장 자리에서 중심쪽으로 나선형 소리골이 새겨져 있는데
+LP판을 일정한 속도로 회전시키고<br>
+카트리지 바늘을 이 소리골에 놓으면 소리골의 모양에 따라 바늘이 진동하여
+소리골의 모양과 같은 전압을 만들어 냅니다.<br>
+</div>
+<div class="A4d">
+</div>
+
+
+<div class="A4e">
+  Vinyl record
+</div>
+<div class="A4f">
+<h1> 평평한 티스크로 이루어진 아날로그 소리저장 매체이다.<br />
+오늘날 흔히 부르는 vinyl은 레코드의 소재인 염화비닐을 가리킨다.</h1>
+</div>
+<div class="A4g">
+</div>
+</div>
+
+
+
+
+<div class="A5"><a name="5"></a>
+  <div class="A55">
+<div class="A5a">
+  principle
+</div>
+
+<div class="A5b">
+  <div class="A5b1">
+    01<br />구조
+  </div>
+  <div class="A5b2">
+    02<br />그루브
+  </div>
+  <div class="A5b3">
+    03<br />카트리지
+  </div>
+  <div class="A5b4">
+    04<br />턴테이블
+  </div>
+  <div class="A5b5">
+    05<br />톤암
+  </div><div class="A5b6">
+    06<br />이퀄라이저
+  </div>
+</div>
+
+
+
+<div class="A5c">
+  <div class="A5c1">
+
+    <div class="A5c11">
+LP 판에 V자 모양의 바늘을 통해 미세한 홈(기록된 소리의 파형, 소리골)을 파게됩니다.
+축음기의 바늘을 LP 판위에 놓고 턴테이블이 돌게 하면 바늘이 미세한 홈의 골의 강약에 따라 움직이고 
+움직임을 통해 진동을 전기신호로 바꿔 다시 스피커로 전달하여 소리를 내게 됩니다.
+    </div>
+    <div class="A5c111">
+    </div>
+  </div>
+
+  <div class="A5c2">
+    <div class="A5c22">
+      LP 레코드에 새겨진 그루브(굴곡)에 따라 음악이 플레이 되는 방식입니다.
+      음악의 순서에 따라 1분에 33⅓회전을 도는 LP가 돌아가게 되고 이러한 그루브를 카트리지에 달린 바늘(스타일러스 팁)이 음구의 진동을 그대로 읽어들여
+      진동을 바늘의 몸통인 캔틸레버와 카트리지 본체로 전달하여 전기신호로 변환하는 과정을 거치게 됩니다.
+    </div>
+    <div class="A5c222">
+    </div>
+  </div>
+
+
+  <div class="A5c3">
+
+    <div class="A5c33">
+      MM (Moving Magnet)카트리지는 자석이 움직이는 형식으로 캔틸래버가 움직이면 자석이 움직여 전기가 발생하게 되고,<br>
+      MC (Moving Coil)카트리지는 코일이 움직여 전기신호를 발생시키는 방식입니다.
+    </div>
+    <div class="A5c333">
+    </div>
+  </div>
+
+
+  <div class="A5c4">
+    <div class="A5c44">
+      아이들러형은 플래터가 회전하는 힘이 좋아서 소리가 굵고 힘차다.<br />
+      벨트 드라이브형은 레코드판을 올려놓는 플래터를 고무벨트로 그것과 연결된 독립된 모터가 회전시켜 외부 잡음이나 진동이 적다.<br />
+      다이렉트 드라이브형은 모터가 플래터 바로 아래 연결되어 모터 축에 플래터가 직접 끼워져 돌아가는 방식이며 디제잉 용도로 쓸 수 있다.
+    </div>
+    <div class="A5c444">
+    </div>
+  </div>
+
+
+  <div class="A5c5">
+    <div class="A5c55">
+      레코드면에 수평으로 따라오도록 안내하는 역할을 하는 팔 모양 부분입니다.<br />
+      LP판의 표면 위를 주행하며 카트리지가 신호를 정확히 읽어낼 수 있도록 이끌어주고,<br />
+      바늘이 LP판의 소리골을 읽어갈 때 카트리지가 움직이지 않게 압력을 주면서도 바늘의 움직임에 대해서는 부드럽게 하는 역할을 합니다.
+    </div>
+    <div class="A5c555">
+    </div>
+  </div>
+
+
+  <div class="A5c6">
+    <div class="A5c66">
+      사람이 귀로 들을 수 있는 가청범위대역(20Hz~20kHz) 주파수를 분할하여 음질을 보정하는 기기입니다.<br />
+      PA의 모든 부분에서 두루 사용되는 필수기기이며 스피커의 피드백 주파수를 찾아내어 피드백을 감소시키는 기능도 있습니다.
+    </div>
+    <div class="A5c666">
+    </div>
+  </div>
+
+
+<!--</div>
+<div class="go_top">
+ <a href="#"><div class="top"></div></a>
+</div>-->
+
+</div>
+</div>
+
+
+
+
+
+
+  </body>
